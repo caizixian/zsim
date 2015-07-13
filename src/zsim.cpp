@@ -945,6 +945,7 @@ VOID SyscallEnterUnlocked(THREADID tid, CONTEXT *ctxt) {
 
     if (!isRetryThread) {
         VirtSyscallEnter(tid, ctxt, std, procTreeNode->getPatchRoot(), isNopThread);
+        SaveModifiedSyscallArgs(tid, ctxt, &ctxtOrig);
     }
 
     assert(!inSyscall[tid]); inSyscall[tid] = true;
@@ -968,7 +969,6 @@ VOID SyscallEnterUnlocked(THREADID tid, CONTEXT *ctxt) {
         fPtrs[tid] = joinPtrs;  // will join at the next instr point
         //info("SyscallEnter %d", tid);
     }
-    SaveModifiedSyscallArgs(tid, ctxt, &ctxtOrig);
 }
 
 // Performs action related to SyscallEnter with acquiring the Pin internal lock
