@@ -75,6 +75,7 @@ PinCmd::PinCmd(Config* conf, const char* configFile, const char* outputDir, uint
         // Parent injection.
         args.push_back("-injection");
         args.push_back("child");
+	args.push_back("-ifeellucky");
     }
 
     //Load tool
