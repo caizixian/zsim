@@ -19,6 +19,7 @@ Instructions with DRAMsim3
 
 Here's the example commands to setup with DRARMsim3 in a Ubuntu14 container:
 
+```bash
 apt-get clean && apt-get update && apt-get install -y git wget \
 g++ \
 libconfig++-dev \
@@ -33,7 +34,7 @@ scons \
 && apt-get remove -y scons && apt-get purge -y scons \
 && cd /home/zsim/build/opt/ && rm *.os *.o *.d *.ot \
 && rm /home/pin-2.14-71313-gcc.4.4.7-linux.tar.gz
-
+```
 
 License & Copyright
 -------------------
