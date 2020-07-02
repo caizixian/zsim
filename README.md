@@ -14,7 +14,7 @@ You can find more details about zsim in our ISCA 2013 paper:
 http://people.csail.mit.edu/sanchez/papers/2013.zsim.isca.pdf.
 
 
-Instructions with DRAMsim3
+Instructions with Linux (kernel 4)
 --------------------------
 
 Here's the example commands to setup with DRARMsim3 in a Ubuntu14 container:
