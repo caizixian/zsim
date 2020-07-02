@@ -29,7 +29,7 @@ scons \
 && wget -nv -P /home https://software.intel.com/sites/landingpage/pintool/downloads/pin-2.14-71313-gcc.4.4.7-linux.tar.gz \
 && cd /home/ && tar -xzf /home/pin-2.14-71313-gcc.4.4.7-linux.tar.gz \
 && mv /home/pin-2.14-71313-gcc.4.4.7-linux /home/pin \
-&& cd /home && git clone -b linux-4 https://github.com/shavvn/zsim.git \
+&& cd /home && git clone -b linux-4 https://github.com/umd-memsys/zsim.git \
 && cd /home/zsim && scons -j8 \
 && apt-get remove -y scons && apt-get purge -y scons \
 && cd /home/zsim/build/opt/ && rm *.os *.o *.d *.ot \
