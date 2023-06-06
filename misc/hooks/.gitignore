@@ -1,0 +1,8 @@
+/*.o
+/*.a
+/*.so
+/*.class
+/test_c
+/test_cpp
+/test_fortran
+/zsim_jni.h

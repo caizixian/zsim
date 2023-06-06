@@ -1,0 +1,11 @@
+# build output
+/build
+
+# DaCapo
+scratch
+
+# ZSim
+*.h5
+*.out
+out.cfg
+heartbeat
