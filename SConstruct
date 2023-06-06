@@ -131,6 +131,9 @@ def buildSim(cppFlags, dir, type, pgo=None):
         env["CPPPATH"] += [joinpath(HDF5PATH, "include/")]
         env["LIBPATH"] += [joinpath(HDF5PATH, "lib/")]
         env["RPATH"]   += [joinpath(HDF5PATH, "lib/")]
+    else:
+        env["CPPPATH"] += ["/usr/include/hdf5/serial/"]
+        env["LIBPATH"] += ["/usr/lib/x86_64-linux-gnu/hdf5/serial/"]
 
     if "POLARSSLPATH" in os.environ:
         POLARSSLPATH = os.environ["POLARSSLPATH"]
